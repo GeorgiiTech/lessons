@@ -1,0 +1,29 @@
+[project]
+name = "lessons"
+version = "0.1.0"
+description = "Code for the video series 'Lessons · Python for ML with PyTorch' by Georgii Kharlampiiev"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch==2.15.0",
+    "torchvision==0.29.2",
+    "numpy==2.5.4",
+    "matplotlib==3.11.2",
+    "tensorboard==2.21.0",
+    "gymnasium==1.4.0",
+]
+
+[project.optional-dependencies]
+nlp = ["transformers==5.22.2", "peft==0.21.2"]        # lessons 21-22
+rl = ["stable-baselines3==2.9.2"]                      # lesson 25
+serve = ["onnx==1.23.2", "fastapi==0.162.3"]           # lesson 26
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
