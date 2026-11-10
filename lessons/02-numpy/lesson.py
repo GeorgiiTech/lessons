@@ -27,20 +27,27 @@ def numpy_sum_squares(values: np.ndarray) -> float:
     return float(np.sum(values * values))
 
 
+def best_time(fn, *args, repeats: int = 3) -> float:
+    """Run fn several times, return the fastest run (seconds)."""
+    times = []
+    for _ in range(repeats):
+        start = time.perf_counter()
+        fn(*args)
+        times.append(time.perf_counter() - start)
+    return min(times)
+
+
 def compare_loop_vs_numpy(n: int) -> None:
     rng = np.random.default_rng(0)
     arr = rng.random(n)
     lst = arr.tolist()
 
-    start = time.perf_counter()
     a = loop_sum_squares(lst)
-    t_loop = time.perf_counter() - start
-
-    start = time.perf_counter()
     b = numpy_sum_squares(arr)
-    t_numpy = time.perf_counter() - start
-
     assert abs(a - b) / b < 1e-9          # same answer
+
+    t_loop = best_time(loop_sum_squares, lst)
+    t_numpy = best_time(numpy_sum_squares, arr)
     print(f"{n:,} numbers: loop {t_loop * 1000:.0f} ms, "
           f"NumPy {t_numpy * 1000:.1f} ms "
           f"-> {t_loop / t_numpy:.0f}x faster")
@@ -105,7 +112,31 @@ def broadcasting_trap() -> None:
     print("a - b.ravel() shape:", (a - b.ravel()).shape)
 
 
-# %% [8] NumPy and PyTorch talk to each other.
+# %% [8] Slices are views: they share memory with the array.
+def views_not_copies() -> None:
+    x = np.array([[1.0, 2.0, 3.0],
+                  [4.0, 5.0, 6.0]])
+    first_row = x[0]                          # a view
+    first_row[0] = 100.0
+    print("x after editing the view:", x.tolist())
+    safe = x[1].copy()                        # a real copy
+    safe[0] = -1.0
+    print("x after editing the copy:", x.tolist())
+
+
+# %% [9] Vectorizing an if: maximum and where.
+def relu_loop(values: list[float]) -> list[float]:
+    return [v if v > 0 else 0.0 for v in values]
+
+
+def vectorized_if() -> None:
+    z = np.array([-2.0, -0.5, 0.0, 1.5, 3.0])
+    print("relu loop :", relu_loop(z.tolist()))
+    print("maximum   :", np.maximum(z, 0.0).tolist())
+    print("where     :", np.where(z > 0, z, 0.1 * z).tolist())
+
+
+# %% [10] NumPy and PyTorch talk to each other.
 def numpy_and_torch() -> None:
     arr = np.array([1.0, 2.0, 3.0])
     shared = torch.from_numpy(arr)            # same memory
@@ -124,4 +155,6 @@ if __name__ == "__main__":
     broadcasting(x)
     standardize_demo()
     broadcasting_trap()
+    views_not_copies()
+    vectorized_if()
     numpy_and_torch()
