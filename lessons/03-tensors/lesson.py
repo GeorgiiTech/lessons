@@ -105,6 +105,14 @@ def on_device() -> None:
     print("created on:", w.device)
 
 
+# %% [11] torch.tensor (lowercase) vs torch.Tensor (capital T).
+def tensor_vs_Tensor() -> None:
+    a = torch.tensor(3)       # the number 3
+    b = torch.Tensor(3)       # 3 UNINITIALIZED floats!
+    print("torch.tensor(3):", tuple(a.shape), a.dtype, a.item())
+    print("torch.Tensor(3):", tuple(b.shape), b.dtype)
+
+
 if __name__ == "__main__":
     creation()
     random_tensors()
@@ -116,3 +124,4 @@ if __name__ == "__main__":
     indexing()
     like_functions()
     on_device()
+    tensor_vs_Tensor()
