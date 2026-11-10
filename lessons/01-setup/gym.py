@@ -8,20 +8,21 @@ import torch
 
 
 def get_device() -> torch.device:
-    """Return cuda if available, else mps if available, else cpu."""
+    """cuda if available, else mps if available, else cpu."""
     # TODO: write it without looking at lesson.py
     raise NotImplementedError
 
 
 def make_grid() -> torch.Tensor:
-    """Return a float32 tensor with shape (3, 4) holding the numbers 1, 2, ..., 12 row by row.
-    Hint: torch.arange and .reshape (lesson 04 explains reshape in depth)."""
+    """A float32 tensor of shape (3, 4): the numbers 1..12, row by row.
+    Hint: torch.arange and .reshape (more about reshape in lesson 04)."""
     # TODO
     raise NotImplementedError
 
 
 def row_sums(t: torch.Tensor) -> torch.Tensor:
-    """Return the sum of each row of a 2-D tensor, without a Python loop. Hint: .sum(dim=...)."""
+    """The sum of each row of a 2-D tensor, without a Python loop.
+    Hint: .sum(dim=...)."""
     # TODO
     raise NotImplementedError
 
