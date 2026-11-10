@@ -12,4 +12,4 @@ uv run python lessons/02-numpy/gym.py         # your exercise (fill in the TODOs
 uv run python lessons/02-numpy/solution.py    # one possible solution
 ```
 
-Videos: EN — soon · UA — скоро
+Videos: [EN](https://youtu.be/I8gNEusabGU) · [UA](https://youtu.be/0pfXluBHkoA)

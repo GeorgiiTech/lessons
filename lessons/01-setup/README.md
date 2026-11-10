@@ -11,4 +11,4 @@ uv run python lessons/01-setup/gym.py         # your exercise (fill in the TODOs
 uv run python lessons/01-setup/solution.py    # one possible solution
 ```
 
-Videos: EN — soon · UA — скоро
+Videos: [EN](https://youtu.be/L3bsJqpwbwk) · [UA](https://youtu.be/TmXBpPfG_gQ)

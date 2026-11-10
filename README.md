@@ -29,9 +29,9 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 
 | # | Lesson | Code | Video (EN) | Відео (UA) |
 |---|---|---|---|---|
-| 01 | Why PyTorch and How to Set It Up | [01-setup](lessons/01-setup) | soon | скоро |
-| 02 | Thinking in Arrays: NumPy and Vectorization | [02-numpy](lessons/02-numpy) | soon | скоро |
-| 03 | Tensors 101 | [03-tensors](lessons/03-tensors) | soon | скоро |
+| 01 | Why PyTorch and How to Set It Up | [01-setup](lessons/01-setup) | [EN](https://youtu.be/L3bsJqpwbwk) | [UA](https://youtu.be/TmXBpPfG_gQ) |
+| 02 | Thinking in Arrays: NumPy and Vectorization | [02-numpy](lessons/02-numpy) | [EN](https://youtu.be/I8gNEusabGU) | [UA](https://youtu.be/0pfXluBHkoA) |
+| 03 | Tensors 101 | [03-tensors](lessons/03-tensors) | [EN](https://youtu.be/MxjEdMns93g) | [UA](https://youtu.be/yzwDuoy1J0Q) |
 | 04 | Tensor Shapes: Reshape, Broadcast, Matmul | [04-shapes](lessons/04-shapes) | soon | скоро |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)

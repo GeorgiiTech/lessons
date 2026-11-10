@@ -11,4 +11,4 @@ uv run python lessons/03-tensors/gym.py
 uv run python lessons/03-tensors/solution.py
 ```
 
-Videos: EN — soon · UA — скоро
+Videos: [EN](https://youtu.be/MxjEdMns93g) · [UA](https://youtu.be/yzwDuoy1J0Q)
