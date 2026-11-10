@@ -80,7 +80,24 @@ def batched_matmul() -> None:
     print("(64, 5, 3) @ (3, 4) ->", tuple((xb @ w).shape))
 
 
-# %% [9] Best practice: check shapes where tensors meet.
+# %% [9] Joining tensors: cat vs stack.
+def cat_vs_stack() -> None:
+    a = torch.zeros(2, 3)
+    b = torch.ones(2, 3)
+    print("cat dim=0  :", tuple(torch.cat([a, b], dim=0).shape))
+    print("cat dim=1  :", tuple(torch.cat([a, b], dim=1).shape))
+    print("stack dim=0:", tuple(torch.stack([a, b], dim=0).shape))
+
+
+# %% [10] Indexing can drop a dimension.
+def index_keeps_dim() -> None:
+    x = torch.rand(4, 3)
+    print("x[0]   :", tuple(x[0].shape))      # dim dropped
+    print("x[0:1] :", tuple(x[0:1].shape))    # dim kept
+    print("x[None]:", tuple(x[None].shape))   # like unsqueeze(0)
+
+
+# %% [11] Best practice: check shapes where tensors meet.
 def linear(x: torch.Tensor, w: torch.Tensor) -> torch.Tensor:
     assert x.shape[-1] == w.shape[0], f"{x.shape} @ {w.shape}"
     return x @ w
@@ -96,4 +113,6 @@ if __name__ == "__main__":
     bias_broadcast()
     matmul_rules()
     batched_matmul()
+    cat_vs_stack()
+    index_keeps_dim()
     print("linear:", tuple(linear(torch.rand(8, 3), torch.rand(3, 2)).shape))
