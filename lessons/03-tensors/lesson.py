@@ -76,6 +76,35 @@ def in_place() -> None:
     print("after add_:", x.tolist())
 
 
+# %% [8] Indexing: rows, columns, single elements.
+def indexing() -> None:
+    x = torch.tensor([[1.0, 2.0, 3.0],
+                      [4.0, 5.0, 6.0]])
+    print("x[1, 2]  =", x[1, 2].item())
+    print("x[0]     =", x[0].tolist())
+    print("x[:, 1]  =", x[:, 1].tolist())
+    print("x[-1, -1]=", x[-1, -1].item())
+
+
+# %% [9] Same shape as another tensor: the *_like functions.
+def like_functions() -> None:
+    x = torch.tensor([[1.0, 2.0, 3.0],
+                      [4.0, 5.0, 6.0]])
+    z = torch.zeros_like(x)
+    r = torch.rand_like(x)
+    print("zeros_like:", tuple(z.shape), z.dtype)
+    print("rand_like :", tuple(r.shape), r.dtype)
+
+
+# %% [10] Create tensors directly on the device.
+def on_device() -> None:
+    mps = torch.backends.mps.is_available()
+    device = "cuda" if torch.cuda.is_available() else (
+        "mps" if mps else "cpu")
+    w = torch.zeros(2, 3, device=device)   # no copy needed
+    print("created on:", w.device)
+
+
 if __name__ == "__main__":
     creation()
     random_tensors()
@@ -84,3 +113,6 @@ if __name__ == "__main__":
     int_tensor_trap()
     conversions()
     in_place()
+    indexing()
+    like_functions()
+    on_device()
