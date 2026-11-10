@@ -30,5 +30,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | # | Lesson | Code | Video (EN) | Відео (UA) |
 |---|---|---|---|---|
 | 01 | Why PyTorch and How to Set It Up | [01-setup](lessons/01-setup) | soon | скоро |
+| 02 | Thinking in Arrays: NumPy and Vectorization | [02-numpy](lessons/02-numpy) | soon | скоро |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
