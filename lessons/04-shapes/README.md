@@ -10,4 +10,4 @@ uv run python lessons/04-shapes/gym.py
 uv run python lessons/04-shapes/solution.py
 ```
 
-Videos: EN — soon · UA — скоро
+Videos: [EN](https://youtu.be/3Q9q5C1KC9o) · [UA](https://youtu.be/ppfM7sTQbJc)
