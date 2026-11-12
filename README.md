@@ -34,5 +34,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 03 | Tensors 101 | [03-tensors](lessons/03-tensors) | [EN](https://youtu.be/MxjEdMns93g) | [UA](https://youtu.be/yzwDuoy1J0Q) |
 | 04 | Tensor Shapes: Reshape, Broadcast, Matmul | [04-shapes](lessons/04-shapes) | [EN](https://youtu.be/3Q9q5C1KC9o) | [UA](https://youtu.be/ppfM7sTQbJc) |
 | 05 | Autograd: How PyTorch Computes Gradients | [05-autograd](lessons/05-autograd) | [EN](https://youtu.be/HCdEWG4co2g) | [UA](https://youtu.be/8KlW4jxTWBU) |
+| 06 | Gradient Descent From Scratch | [06-gradient-descent](lessons/06-gradient-descent) | soon | скоро |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
