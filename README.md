@@ -35,5 +35,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 04 | Tensor Shapes: Reshape, Broadcast, Matmul | [04-shapes](lessons/04-shapes) | [EN](https://youtu.be/3Q9q5C1KC9o) | [UA](https://youtu.be/ppfM7sTQbJc) |
 | 05 | Autograd: How PyTorch Computes Gradients | [05-autograd](lessons/05-autograd) | [EN](https://youtu.be/HCdEWG4co2g) | [UA](https://youtu.be/8KlW4jxTWBU) |
 | 06 | Gradient Descent From Scratch | [06-gradient-descent](lessons/06-gradient-descent) | [EN](https://youtu.be/-N6InAF1K6g) | [UA](https://youtu.be/7mdYferU-m8) |
+| 07 | nn.Module, Loss Functions and Optimizers | [07-nn-module](lessons/07-nn-module) | soon | скоро |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
