@@ -36,5 +36,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 05 | Autograd: How PyTorch Computes Gradients | [05-autograd](lessons/05-autograd) | [EN](https://youtu.be/HCdEWG4co2g) | [UA](https://youtu.be/8KlW4jxTWBU) |
 | 06 | Gradient Descent From Scratch | [06-gradient-descent](lessons/06-gradient-descent) | [EN](https://youtu.be/-N6InAF1K6g) | [UA](https://youtu.be/7mdYferU-m8) |
 | 07 | nn.Module, Loss Functions and Optimizers | [07-nn-module](lessons/07-nn-module) | [EN](https://youtu.be/VO3UTFaqGjw) | [UA](https://youtu.be/A0oo-k7S4kE) |
+| 08 | The Training Loop Done Right | [08-training-loop](lessons/08-training-loop) | soon | скоро |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
