@@ -16,7 +16,7 @@ from torch.utils.data import DataLoader, Dataset, TensorDataset, random_split
 QUICK = os.environ.get("LESSONS_QUICK") == "1"
 
 
-# %% [1] A Dataset answers two questions: how many examples, and give me number i.
+# %% [1] A Dataset answers two questions: how many, and give me number i.
 class StudentScores(Dataset):
     def __init__(self, n: int = 100, transform=None, seed: int = 0):
         g = torch.Generator().manual_seed(seed)
@@ -62,7 +62,7 @@ def time_loader(workers: int, epochs: int = 3) -> list[float]:
 
 
 # %% [4] Mini-batch training: many small steps per epoch.
-def fit(train_set, val_set, batch_size: int, epochs: int, seed: int = 1) -> float:
+def fit(train_set, val_set, batch_size: int, epochs: int, seed: int = 1):
     torch.manual_seed(seed)
     model = nn.Sequential(nn.Linear(1, 64), nn.ReLU(), nn.Linear(64, 1))
     optimizer = torch.optim.Adam(model.parameters(), lr=0.05)
@@ -78,7 +78,8 @@ def fit(train_set, val_set, batch_size: int, epochs: int, seed: int = 1) -> floa
             optimizer.step()
     model.eval()
     with torch.inference_mode():
-        total = sum(loss_fn(model(x), y).item() * len(x) for x, y in val_loader)
+        total = sum(loss_fn(model(x), y).item() * len(x)
+                    for x, y in val_loader)
     return total / len(val_set)
 
 
@@ -105,9 +106,11 @@ if __name__ == "__main__":
 
     loader = DataLoader(train_set, batch_size=16, shuffle=True)
     xb, yb = next(iter(loader))
-    print("batches:", len(loader), "| x:", tuple(xb.shape), "y:", tuple(yb.shape))
-    print("batch sizes (32):", [len(b[0]) for b in DataLoader(train_set, batch_size=32)])
-    print("drop_last:", [len(b[0]) for b in DataLoader(train_set, batch_size=32, drop_last=True)])
+    print("batches:", len(loader), "| x:", (*xb.shape,), "y:", (*yb.shape,))
+    sizes = [len(xb) for xb, _ in DataLoader(train_set, batch_size=32)]
+    print("batch sizes (32):", sizes)
+    full = DataLoader(train_set, batch_size=32, drop_last=True)
+    print("drop_last:", [len(xb) for xb, _ in full])
 
     small = DataLoader(range(10), batch_size=5, shuffle=True)
     for epoch in range(2):
@@ -115,12 +118,15 @@ if __name__ == "__main__":
 
     for bs in (80, 16):
         val = fit(train_set, val_set, batch_size=bs, epochs=20)
-        print(f"batch {bs:2d}: {20 * (80 // bs):3d} steps in 20 epochs, val loss {val:6.2f}")
+        steps = 20 * (80 // bs)
+        print(f"batch {bs:2d}: {steps:3d} steps in 20 epochs,",
+              f"val loss {val:6.2f}")
 
     if not QUICK:
         for w in (0, 4):
             print(f"num_workers={w}: seconds per epoch {time_loader(w)}")
 
-    sentences = [torch.tensor([5, 8, 2]), torch.tensor([7]), torch.tensor([3, 9])]
-    padded, lengths = next(iter(DataLoader(sentences, batch_size=3, collate_fn=pad_collate)))
+    sentences = [torch.tensor(s) for s in ([5, 8, 2], [7], [3, 9])]
+    pad_loader = DataLoader(sentences, batch_size=3, collate_fn=pad_collate)
+    padded, lengths = next(iter(pad_loader))
     print("padded:", padded.tolist(), "lengths:", lengths.tolist())

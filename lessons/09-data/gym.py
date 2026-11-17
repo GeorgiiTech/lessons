@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Dataset
 
 
 class Squares(Dataset):
-    """n examples: example i is (tensor([i]), tensor([i * i])), both float32."""
+    """n examples: example i is (tensor([i]), tensor([i * i])), float32."""
 
     def __init__(self, n: int):
         self.n = n
@@ -18,7 +18,7 @@ class Squares(Dataset):
 
 
 def make_loader(dataset: Dataset, batch_size: int, seed: int) -> DataLoader:
-    """A shuffled DataLoader whose order depends only on `seed` (use a torch.Generator)."""
+    """Shuffled; the order depends only on `seed` (use a torch.Generator)."""
     # TODO
     raise NotImplementedError
 
