@@ -95,9 +95,9 @@ def fit(train_loader, val_loader, device, p_drop=0.0, weight_decay=0.0,
 
 
 def report(name, history):
-    b = min(history, key=lambda h: h[2])
-    print(f"{name:12s} epochs {history[-1][0]:2d}  best val loss {b[2]:.3f} "
-          f"(ep {b[0]:2d}, acc {b[4]:.3f})  last {history[-1][2]:.3f}")
+    b, last = min(history, key=lambda h: h[2]), history[-1]
+    print(f"{name:12s} best val {b[2]:.3f} @{b[0]:2d}  acc {b[4]:.3f}  "
+          f"last {last[2]:.3f}  {last[0]:2d} ep")
 
 
 if __name__ == "__main__":
@@ -114,10 +114,10 @@ if __name__ == "__main__":
 
     # %% [3] Plain training: the train loss falls, the val loss turns back up.
     model, plain = fit(train_loader, val_loader, device)
+    print("epoch  loss train    val  acc train    val")
     for e, tl, vl, ta, va in plain:
-        if e in (1, 5, 10, 15, 20, 30, 40, 50, 60):
-            print(f"epoch {e:2d}  train loss {tl:.3f}  val loss {vl:.3f}  "
-                  f"train acc {ta:.3f}  val acc {va:.3f}")
+        if e in (1, 5, 10, 20, 40, 60):
+            print(f"{e:5d}  {tl:10.3f}  {vl:5.3f}  {ta:9.3f}  {va:5.3f}")
     report("plain", plain)
 
     # %% [4] Dropout and weight decay.
