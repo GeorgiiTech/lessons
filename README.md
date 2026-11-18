@@ -39,5 +39,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 08 | The Training Loop Done Right | [08-training-loop](lessons/08-training-loop) | [EN](https://youtu.be/WTnCGtYVOzA) | [UA](https://youtu.be/g1QpYao_EhY) |
 | 09 | Datasets and DataLoaders | [09-data](lessons/09-data) | [EN](https://youtu.be/wdLAseZS3ts) | [UA](https://youtu.be/AAt56Drc0Bs) |
 | 10 | Your First Real Classifier (FashionMNIST) | [10-classifier](lessons/10-classifier) | [EN](https://youtu.be/1Zk-4fkJMoA) | [UA](https://youtu.be/T87ZeAOEKKA) |
+| 11 | Overfitting and How to Fight It | [11-overfitting](lessons/11-overfitting) | [EN](https://youtu.be/agYHwPB_zxQ) | [UA](https://youtu.be/vr6NP9uVKx4) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)

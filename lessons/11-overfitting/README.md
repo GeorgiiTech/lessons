@@ -13,4 +13,4 @@ uv run python lessons/11-overfitting/gym.py
 uv run python lessons/11-overfitting/solution.py
 ```
 
-Videos: EN — soon · UA — скоро
+Videos: [EN](https://youtu.be/agYHwPB_zxQ) · [UA](https://youtu.be/vr6NP9uVKx4)
