@@ -38,5 +38,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 07 | nn.Module, Loss Functions and Optimizers | [07-nn-module](lessons/07-nn-module) | [EN](https://youtu.be/VO3UTFaqGjw) | [UA](https://youtu.be/A0oo-k7S4kE) |
 | 08 | The Training Loop Done Right | [08-training-loop](lessons/08-training-loop) | [EN](https://youtu.be/WTnCGtYVOzA) | [UA](https://youtu.be/g1QpYao_EhY) |
 | 09 | Datasets and DataLoaders | [09-data](lessons/09-data) | [EN](https://youtu.be/wdLAseZS3ts) | [UA](https://youtu.be/AAt56Drc0Bs) |
+| 10 | Your First Real Classifier (FashionMNIST) | [10-classifier](lessons/10-classifier) | [EN](https://youtu.be/1Zk-4fkJMoA) | [UA](https://youtu.be/T87ZeAOEKKA) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)

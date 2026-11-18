@@ -14,4 +14,4 @@ uv run python lessons/10-classifier/gym.py
 uv run python lessons/10-classifier/solution.py
 ```
 
-Videos: EN — soon · UA — скоро
+Videos: [EN](https://youtu.be/1Zk-4fkJMoA) · [UA](https://youtu.be/T87ZeAOEKKA)
