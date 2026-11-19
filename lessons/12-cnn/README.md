@@ -12,4 +12,4 @@ uv run python lessons/12-cnn/gym.py
 uv run python lessons/12-cnn/solution.py
 ```
 
-Videos: EN · UA (links added after upload)
+Videos: [EN](https://youtu.be/sK2Fuub3Slc) · [UA](https://youtu.be/djcJKZepn1c)
