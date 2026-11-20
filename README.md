@@ -44,5 +44,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 13 | Training Tricks: Init, Normalization, Schedules | [13-tricks](lessons/13-tricks) | [EN](https://youtu.be/uCQvtR0db_Y) | [UA](https://youtu.be/WlSQfIr5eq0) |
 | 14 | Transfer Learning | [14-transfer](lessons/14-transfer) | [EN](https://youtu.be/qieM2HR_hWg) | [UA](https://youtu.be/jxCev4XU1z0) |
 | 15 | Debugging Neural Networks | [15-debugging](lessons/15-debugging) | EN (soon) | UA (soon) |
+| 16 | Reproducible Experiments and Checkpoints | [16-experiments](lessons/16-experiments) | EN (soon) | UA (soon) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
