@@ -15,3 +15,5 @@ uv run python lessons/13-tricks/lesson.py
 uv run python lessons/13-tricks/gym.py
 uv run python lessons/13-tricks/solution.py
 ```
+
+Videos: [EN](https://youtu.be/uCQvtR0db_Y) · [UA](https://youtu.be/WlSQfIr5eq0)

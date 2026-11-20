@@ -41,7 +41,7 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 10 | Your First Real Classifier (FashionMNIST) | [10-classifier](lessons/10-classifier) | [EN](https://youtu.be/1Zk-4fkJMoA) | [UA](https://youtu.be/T87ZeAOEKKA) |
 | 11 | Overfitting and How to Fight It | [11-overfitting](lessons/11-overfitting) | [EN](https://youtu.be/agYHwPB_zxQ) | [UA](https://youtu.be/vr6NP9uVKx4) |
 | 12 | Convolutional Neural Networks | [12-cnn](lessons/12-cnn) | [EN](https://youtu.be/sK2Fuub3Slc) | [UA](https://youtu.be/djcJKZepn1c) |
-| 13 | Training Tricks: Init, Normalization, Schedules | [13-tricks](lessons/13-tricks) | EN (soon) | UA (soon) |
+| 13 | Training Tricks: Init, Normalization, Schedules | [13-tricks](lessons/13-tricks) | [EN](https://youtu.be/uCQvtR0db_Y) | [UA](https://youtu.be/WlSQfIr5eq0) |
 | 14 | Transfer Learning | [14-transfer](lessons/14-transfer) | EN (soon) | UA (soon) |
 | 15 | Debugging Neural Networks | [15-debugging](lessons/15-debugging) | EN (soon) | UA (soon) |
 
