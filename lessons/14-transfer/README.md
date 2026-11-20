@@ -12,3 +12,5 @@ uv run python lessons/14-transfer/lesson.py
 uv run python lessons/14-transfer/gym.py
 uv run python lessons/14-transfer/solution.py
 ```
+
+Videos: [EN](https://youtu.be/qieM2HR_hWg) · [UA](https://youtu.be/jxCev4XU1z0)

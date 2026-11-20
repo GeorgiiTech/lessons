@@ -42,7 +42,7 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 11 | Overfitting and How to Fight It | [11-overfitting](lessons/11-overfitting) | [EN](https://youtu.be/agYHwPB_zxQ) | [UA](https://youtu.be/vr6NP9uVKx4) |
 | 12 | Convolutional Neural Networks | [12-cnn](lessons/12-cnn) | [EN](https://youtu.be/sK2Fuub3Slc) | [UA](https://youtu.be/djcJKZepn1c) |
 | 13 | Training Tricks: Init, Normalization, Schedules | [13-tricks](lessons/13-tricks) | [EN](https://youtu.be/uCQvtR0db_Y) | [UA](https://youtu.be/WlSQfIr5eq0) |
-| 14 | Transfer Learning | [14-transfer](lessons/14-transfer) | EN (soon) | UA (soon) |
+| 14 | Transfer Learning | [14-transfer](lessons/14-transfer) | [EN](https://youtu.be/qieM2HR_hWg) | [UA](https://youtu.be/jxCev4XU1z0) |
 | 15 | Debugging Neural Networks | [15-debugging](lessons/15-debugging) | EN (soon) | UA (soon) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
