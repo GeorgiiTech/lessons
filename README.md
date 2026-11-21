@@ -49,5 +49,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 18 | From Notebook to Project | [18-project](lessons/18-project) | EN (soon) | UA (soon) |
 | 19 | Embeddings and Sequences | [19-sequences](lessons/19-sequences) | EN (soon) | UA (soon) |
 | 20 | Attention From Scratch | [20-attention](lessons/20-attention) | EN (soon) | UA (soon) |
+| 21 | Build a Tiny GPT | [21-tiny-gpt](lessons/21-tiny-gpt) | EN (soon) | UA (soon) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
