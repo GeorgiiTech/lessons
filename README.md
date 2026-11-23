@@ -52,5 +52,8 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 21 | Build a Tiny GPT | [21-tiny-gpt](lessons/21-tiny-gpt) | EN (soon) | UA (soon) |
 | 22 | Hugging Face and LoRA | [22-lora](lessons/22-lora) | EN (soon) | UA (soon) |
 | 23 | Gymnasium and CartPole | [23-gymnasium](lessons/23-gymnasium) | EN (soon) | UA (soon) |
+| 24 | Deep Q-Learning (DQN) | [24-dqn](lessons/24-dqn) | EN (soon) | UA (soon) |
+| 25 | Policy Gradients and PPO | [25-policy-gradients](lessons/25-policy-gradients) | EN (soon) | UA (soon) |
+| 26 | Save, Export, Serve | [26-serve](lessons/26-serve) | EN (soon) | UA (soon) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)

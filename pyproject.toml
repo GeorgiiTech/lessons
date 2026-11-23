@@ -17,7 +17,8 @@ dependencies = [
 [project.optional-dependencies]
 nlp = ["transformers==5.22.2", "peft==0.21.2"]        # lessons 21-22
 rl = ["stable-baselines3==2.9.2"]                      # lesson 25
-serve = ["onnx==1.23.2", "fastapi==0.162.3"]           # lesson 26
+serve = ["onnx==1.23.2", "onnxscript==0.7.2", "onnxruntime==1.32.0",   # lesson 26
+         "fastapi==0.162.3", "httpx==0.28.1"]
 
 [dependency-groups]
 dev = ["pytest>=8"]

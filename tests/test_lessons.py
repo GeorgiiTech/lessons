@@ -8,7 +8,8 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-NEEDS = {"22-lora": "peft"}          # optional extras: uv sync --extra nlp
+NEEDS = {"22-lora": "peft", "25-policy-gradients": "stable_baselines3",
+         "26-serve": "onnxruntime"}   # optional extras (uv sync --extra ...)
 SCRIPTS = sorted(p for d in (ROOT / "lessons").iterdir() if d.is_dir()
                  for p in (d / "lesson.py", d / "solution.py") if p.exists())
 
