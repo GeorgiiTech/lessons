@@ -43,7 +43,7 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 12 | Convolutional Neural Networks | [12-cnn](lessons/12-cnn) | [EN](https://youtu.be/sK2Fuub3Slc) | [UA](https://youtu.be/djcJKZepn1c) |
 | 13 | Training Tricks: Init, Normalization, Schedules | [13-tricks](lessons/13-tricks) | [EN](https://youtu.be/uCQvtR0db_Y) | [UA](https://youtu.be/WlSQfIr5eq0) |
 | 14 | Transfer Learning | [14-transfer](lessons/14-transfer) | [EN](https://youtu.be/qieM2HR_hWg) | [UA](https://youtu.be/jxCev4XU1z0) |
-| 15 | Debugging Neural Networks | [15-debugging](lessons/15-debugging) | EN (soon) | UA (soon) |
+| 15 | Debugging Neural Networks | [15-debugging](lessons/15-debugging) | [EN](https://youtu.be/55D60eC5OOo) | [UA](https://youtu.be/ypigQR6lvDs) |
 | 16 | Reproducible Experiments and Checkpoints | [16-experiments](lessons/16-experiments) | EN (soon) | UA (soon) |
 | 17 | Making Training Fast: GPU, Mixed Precision, torch.compile | [17-speed](lessons/17-speed) | EN (soon) | UA (soon) |
 | 18 | From Notebook to Project | [18-project](lessons/18-project) | EN (soon) | UA (soon) |
