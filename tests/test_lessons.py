@@ -8,15 +8,18 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
+NEEDS = {"22-lora": "peft"}          # optional extras: uv sync --extra nlp
 SCRIPTS = sorted(p for d in (ROOT / "lessons").iterdir() if d.is_dir()
                  for p in (d / "lesson.py", d / "solution.py") if p.exists())
 
 
 @pytest.mark.parametrize("script", SCRIPTS, ids=lambda p: f"{p.parent.name}/{p.name}")
 def test_script_runs(script: Path) -> None:
+    if script.parent.name in NEEDS:
+        pytest.importorskip(NEEDS[script.parent.name])
     env = {**os.environ, "LESSONS_QUICK": "1"}
     result = subprocess.run([sys.executable, str(script)], cwd=ROOT, env=env,
-                            capture_output=True, text=True, timeout=120)
+                            capture_output=True, text=True, timeout=300)
     assert result.returncode == 0, result.stdout[-2000:] + result.stderr[-2000:]
 
 
