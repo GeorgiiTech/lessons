@@ -51,5 +51,6 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 20 | Attention From Scratch | [20-attention](lessons/20-attention) | EN (soon) | UA (soon) |
 | 21 | Build a Tiny GPT | [21-tiny-gpt](lessons/21-tiny-gpt) | EN (soon) | UA (soon) |
 | 22 | Hugging Face and LoRA | [22-lora](lessons/22-lora) | EN (soon) | UA (soon) |
+| 23 | Gymnasium and CartPole | [23-gymnasium](lessons/23-gymnasium) | EN (soon) | UA (soon) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
