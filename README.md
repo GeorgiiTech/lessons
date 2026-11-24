@@ -44,16 +44,16 @@ Versions used in the whole series: Python 3.12, PyTorch 2.15.0, torchvision 0.29
 | 13 | Training Tricks: Init, Normalization, Schedules | [13-tricks](lessons/13-tricks) | [EN](https://youtu.be/uCQvtR0db_Y) | [UA](https://youtu.be/WlSQfIr5eq0) |
 | 14 | Transfer Learning | [14-transfer](lessons/14-transfer) | [EN](https://youtu.be/qieM2HR_hWg) | [UA](https://youtu.be/jxCev4XU1z0) |
 | 15 | Debugging Neural Networks | [15-debugging](lessons/15-debugging) | [EN](https://youtu.be/55D60eC5OOo) | [UA](https://youtu.be/ypigQR6lvDs) |
-| 16 | Reproducible Experiments and Checkpoints | [16-experiments](lessons/16-experiments) | EN (soon) | UA (soon) |
-| 17 | Making Training Fast: GPU, Mixed Precision, torch.compile | [17-speed](lessons/17-speed) | EN (soon) | UA (soon) |
-| 18 | From Notebook to Project | [18-project](lessons/18-project) | EN (soon) | UA (soon) |
-| 19 | Embeddings and Sequences | [19-sequences](lessons/19-sequences) | EN (soon) | UA (soon) |
-| 20 | Attention From Scratch | [20-attention](lessons/20-attention) | EN (soon) | UA (soon) |
-| 21 | Build a Tiny GPT | [21-tiny-gpt](lessons/21-tiny-gpt) | EN (soon) | UA (soon) |
-| 22 | Hugging Face and LoRA | [22-lora](lessons/22-lora) | EN (soon) | UA (soon) |
-| 23 | Gymnasium and CartPole | [23-gymnasium](lessons/23-gymnasium) | EN (soon) | UA (soon) |
-| 24 | Deep Q-Learning (DQN) | [24-dqn](lessons/24-dqn) | EN (soon) | UA (soon) |
-| 25 | Policy Gradients and PPO | [25-policy-gradients](lessons/25-policy-gradients) | EN (soon) | UA (soon) |
-| 26 | Save, Export, Serve | [26-serve](lessons/26-serve) | EN (soon) | UA (soon) |
+| 16 | Reproducible Experiments and Checkpoints | [16-experiments](lessons/16-experiments) | [EN](https://youtu.be/UQGuwvhGTlw) | [UA](https://youtu.be/fC9fn7DYlko) |
+| 17 | Making Training Fast: GPU, Mixed Precision, torch.compile | [17-speed](lessons/17-speed) | [EN](https://youtu.be/qRzlrqAES44) | [UA](https://youtu.be/d8j4TRtKlzc) |
+| 18 | From Notebook to Project | [18-project](lessons/18-project) | [EN](https://youtu.be/gscmxAC1Dhc) | [UA](https://youtu.be/Q1yu0fu_fmQ) |
+| 19 | Embeddings and Sequences | [19-sequences](lessons/19-sequences) | [EN](https://youtu.be/RaD77ZgDRF8) | [UA](https://youtu.be/aIHjOPjUqB0) |
+| 20 | Attention From Scratch | [20-attention](lessons/20-attention) | [EN](https://youtu.be/cUbGSqpU4F4) | [UA](https://youtu.be/btATAQAUW00) |
+| 21 | Build a Tiny GPT | [21-tiny-gpt](lessons/21-tiny-gpt) | [EN](https://youtu.be/xZe04J__b3I) | [UA](https://youtu.be/drGoFsoQDcM) |
+| 22 | Hugging Face and LoRA | [22-lora](lessons/22-lora) | [EN](https://youtu.be/m2N9upwZtqg) | [UA](https://youtu.be/JED_uGEtzzw) |
+| 23 | Gymnasium and CartPole | [23-gymnasium](lessons/23-gymnasium) | [EN](https://youtu.be/pUe8n24XST8) | [UA](https://youtu.be/wkgdJcrdsUc) |
+| 24 | Deep Q-Learning (DQN) | [24-dqn](lessons/24-dqn) | [EN](https://youtu.be/6WyLLukcyRU) | [UA](https://youtu.be/SEOftUeGCZ4) |
+| 25 | Policy Gradients and PPO | [25-policy-gradients](lessons/25-policy-gradients) | [EN](https://youtu.be/U1Gu4NwkzA4) | [UA](https://youtu.be/sAeVf4LyILE) |
+| 26 | Save, Export, Serve | [26-serve](lessons/26-serve) | [EN](https://youtu.be/Cgc_GC6Xy_c) | [UA](https://youtu.be/Ou8oQoQDIfY) |
 
 Telegram: [EN](https://t.me/kharlampiiev_ai) · [UA](https://t.me/kharlampiiev_ai_ua)
