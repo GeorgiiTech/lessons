@@ -1,0 +1,48 @@
+parameters: 11,689,512
+ImageNet top-1: 69.758
+last layer: Linear(in_features=512, out_features=1000, bias=True)
+ImageClassification(
+    crop_size=[224]
+    resize_size=[256]
+    mean=[0.485, 0.456, 0.406]
+    std=[0.229, 0.224, 0.225]
+    interpolation=InterpolationMode.BILINEAR
+)
+from scratch: 357,034 trainable
+epoch 1  val 0.395  50 s
+epoch 2  val 0.351  99 s
+epoch 3  val 0.414  149 s
+epoch 4  val 0.442  198 s
+epoch 5  val 0.472  247 s
+epoch 6  val 0.521  296 s
+epoch 7  val 0.558  345 s
+epoch 8  val 0.600  393 s
+epoch 9  val 0.618  442 s
+epoch 10  val 0.623  490 s
+epoch 11  val 0.634  539 s
+epoch 12  val 0.646  588 s
+epoch 13  val 0.646  636 s
+epoch 14  val 0.648  685 s
+epoch 15  val 0.645  733 s
+ResNet, random: 11,181,642 trainable
+epoch 1  val 0.218  70 s
+epoch 2  val 0.235  140 s
+epoch 3  val 0.481  211 s
+epoch 4  val 0.525  281 s
+epoch 5  val 0.583  350 s
+ResNet, frozen: 5,130 trainable
+epoch 1  val 0.636  57 s
+epoch 2  val 0.610  114 s
+epoch 3  val 0.697  171 s
+epoch 4  val 0.726  229 s
+epoch 5  val 0.733  287 s
+ResNet, fine-tuned: 11,181,642 trainable
+epoch 1  val 0.608  72 s
+epoch 2  val 0.684  144 s
+epoch 3  val 0.829  214 s
+epoch 4  val 0.860  284 s
+epoch 5  val 0.862  356 s
+from scratch         test 0.670
+ResNet, random       test 0.596
+ResNet, frozen       test 0.748
+ResNet, fine-tuned   test 0.867

@@ -1,0 +1,10 @@
+seed None:  val acc 0.8705
+seed None:  val acc 0.8580
+seed 0:  val acc 0.8605
+seed 0:  val acc 0.8605
+5 seeds: 0.8605 0.8575 0.8655 0.8660 0.8620  mean 0.8623  std 0.0032
+resumed: stopped after epoch 3
+full run 0.8605  stopped + resumed 0.8605
+lr 0.01:  val acc 0.8500
+lr 0.001:  val acc 0.8605
+lr 0.0001:  val acc 0.7865

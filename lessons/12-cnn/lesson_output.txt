@@ -1,0 +1,35 @@
+image (5, 5) → output (3, 3)
+tensor([[3., 3., 0.],
+        [3., 3., 0.],
+        [3., 3., 0.]])
+one output by hand: 3.0
+input   (64, 1, 28, 28)
+conv    (64, 32, 28, 28)
+pool    (64, 32, 14, 14)
+weights (32, 1, 3, 3) + bias 32
+MLP: 203,530 parameters
+epoch  1  val acc 0.848
+epoch  2  val acc 0.866
+epoch  3  val acc 0.872
+epoch  4  val acc 0.871
+epoch  5  val acc 0.880
+epoch  6  val acc 0.883
+epoch  7  val acc 0.885
+epoch  8  val acc 0.888
+epoch  9  val acc 0.882
+epoch 10  val acc 0.891
+MLP: test acc 0.885  Shirt 0.686
+CNN: 220,234 parameters
+epoch  1  val acc 0.864
+epoch  2  val acc 0.893
+epoch  3  val acc 0.902
+epoch  4  val acc 0.909
+epoch  5  val acc 0.908
+epoch  6  val acc 0.913
+epoch  7  val acc 0.918
+epoch  8  val acc 0.914
+epoch  9  val acc 0.916
+epoch 10  val acc 0.917
+CNN: test acc 0.913  Shirt 0.726
+MLP  test 0.885  Shirt 0.686
+CNN  test 0.913  Shirt 0.726

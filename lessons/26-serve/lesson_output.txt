@@ -1,0 +1,8 @@
+test accuracy on 2,000 pictures: 0.871
+state_dict: 816 KB, reloaded outputs identical: True
+exported graph: 4 operations: flatten, linear, relu, linear
+loaded .pt2 matches: True
+model.onnx: 820 KB, input 'input', max difference vs PyTorch 8.6e-06
+one picture: PyTorch 9 us, ONNX Runtime 7 us
+POST /predict -> 200 {'class': 'Ankle boot', 'probability': 0.842}  true: Ankle boot
+100 pixels instead of 784 -> 422

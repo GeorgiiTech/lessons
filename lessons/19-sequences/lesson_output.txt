@@ -1,0 +1,13 @@
+ids [3, 1, 3] -> vectors (3, 4)
+same as one-hot @ weight: True
+rows with a gradient: [1, 3]
+output (1, 5, 3)  last state (1, 1, 3)
+by hand == nn.RNN: True
+rnn  gradient 0/10/20/50 steps back: 5e-03  8e-06  9e-09  8e-17
+lstm gradient 0/10/20/50 steps back: 1e-03  6e-06  8e-08  9e-14
+T=  5  rnn 1.000  lstm 1.000  lstm+forget bias 1.000
+T= 20  rnn 0.681  lstm 0.094  lstm+forget bias 1.000
+T= 50  rnn 0.496  lstm 0.084  lstm+forget bias 0.083
+T=  50  lstm forward    4.9 ms
+T= 200  lstm forward   20.4 ms
+T= 800  lstm forward  100.8 ms

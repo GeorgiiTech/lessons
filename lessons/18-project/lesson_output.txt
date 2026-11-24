@@ -1,0 +1,22 @@
+$ -m fashion.train --help
+usage: train.py [-h] [--epochs EPOCHS] [--lr LR] [--batch-size BATCH_SIZE]
+                [--hidden HIDDEN] [--n-train N_TRAIN] [--seed SEED]
+                [--out OUT] [--data DATA]
+Train a FashionMNIST MLP.
+options:
+  -h, --help            show this help message and exit
+  --epochs EPOCHS
+  --lr LR
+  --batch-size BATCH_SIZE
+  --hidden HIDDEN
+  --n-train N_TRAIN
+  --seed SEED
+  --out OUT
+  --data DATA
+$ -m fashion.train --epochs 3 --n-train 10000 --data ../../data --out ../../runs/l18
+epoch 1  loss 0.787  val acc 0.807
+epoch 2  loss 0.521  val acc 0.826
+epoch 3  loss 0.457  val acc 0.848
+$ -m pytest tests -q -p no:cacheprovider
+....                                                                     [100%]
+4 passed in 1.52s

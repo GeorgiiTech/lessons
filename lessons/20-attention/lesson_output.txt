@@ -1,0 +1,15 @@
+x (2, 5, 8)  q k v (2, 5, 8)
+weights (2, 5, 5)  row sums [1.0, 1.0, 1.0, 1.0, 1.0]
+out (2, 5, 8)
+same as F.scaled_dot_product_attention: True
+1.00  0.00  0.00  0.00
+0.27  0.73  0.00  0.00
+0.01  0.01  0.98  0.00
+0.17  0.23  0.01  0.58
+multi-head out (2, 5, 32)  parameters 4,224
+T= 20  attention acc 1.000
+T= 50  attention acc 1.000
+T=200  attention acc 1.000
+T=  50  forward    3.5 ms  attention weights    0.6 M numbers
+T= 200  forward   17.7 ms  attention weights   10.2 M numbers
+T= 800  forward  195.3 ms  attention weights  163.8 M numbers

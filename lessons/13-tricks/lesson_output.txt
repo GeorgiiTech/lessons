@@ -1,0 +1,52 @@
+big      std after layers 1/5/10/20: 16  2.7e+05  5.3e+10  1.9e+21
+small    std after layers 1/5/10/20: 0.16  2.7e-05  5.3e-10  1.9e-19
+default  std after layers 1/5/10/20: 0.34  0.025  0.02  0.023
+kaiming  std after layers 1/5/10/20: 0.82  0.84  0.88  0.94
+batch norm, mean per feature: True
+layer norm, mean per sample:  True
+batch of 1: Expected more than 1 value per channel when training
+eval mode, batch of 1: (1, 3)
+10 layers, default:
+epoch  1  loss 2.303  val 0.095  max grad norm 0.259  lr 0.01
+epoch  2  loss 2.303  val 0.095  max grad norm 0.43  lr 0.01
+epoch  3  loss 2.303  val 0.095  max grad norm 0.279  lr 0.01
+10 layers, kaiming:
+epoch  1  loss 0.784  val 0.762  max grad norm 16.4  lr 0.01
+epoch  2  loss 0.478  val 0.827  max grad norm 10.8  lr 0.01
+epoch  3  loss 0.418  val 0.804  max grad norm 9.39  lr 0.01
+10 layers, batchnorm:
+epoch  1  loss 0.621  val 0.852  max grad norm 20.1  lr 0.01
+epoch  2  loss 0.401  val 0.861  max grad norm 20.7  lr 0.01
+epoch  3  loss 0.351  val 0.830  max grad norm 19.7  lr 0.01
+10 layers, lr 0.1, clip None:
+epoch  1  loss nan  val 0.101  max grad norm 1.63e+07  lr 0.1
+epoch  2  loss nan  val 0.101  max grad norm 0  lr 0.1
+epoch  3  loss nan  val 0.101  max grad norm 0  lr 0.1
+10 layers, lr 0.1, clip 1.0:
+epoch  1  loss 0.733  val 0.778  max grad norm 10.6  lr 0.1
+epoch  2  loss 0.557  val 0.815  max grad norm 3.39  lr 0.1
+epoch  3  loss 0.518  val 0.832  max grad norm 3.78  lr 0.1
+CNN:
+epoch  1  loss 0.509  val 0.864  max grad norm 10.3  lr 0.001
+epoch  2  loss 0.322  val 0.893  max grad norm 5.43  lr 0.001
+epoch  3  loss 0.278  val 0.902  max grad norm 4.94  lr 0.001
+epoch  4  loss 0.245  val 0.909  max grad norm 5.32  lr 0.001
+epoch  5  loss 0.222  val 0.908  max grad norm 4.49  lr 0.001
+epoch  6  loss 0.205  val 0.913  max grad norm 3.85  lr 0.001
+epoch  7  loss 0.183  val 0.918  max grad norm 4.21  lr 0.001
+epoch  8  loss 0.168  val 0.914  max grad norm 3.44  lr 0.001
+epoch  9  loss 0.153  val 0.916  max grad norm 4.05  lr 0.001
+epoch 10  loss 0.141  val 0.917  max grad norm 3.69  lr 0.001
+CNN+tricks:
+epoch  1  loss 0.432  val 0.878  max grad norm 9.29  lr 0.0028
+epoch  2  loss 0.317  val 0.882  max grad norm 6.08  lr 0.0076
+epoch  3  loss 0.272  val 0.888  max grad norm 3.58  lr 0.01
+epoch  4  loss 0.239  val 0.896  max grad norm 3.57  lr 0.0095
+epoch  5  loss 0.207  val 0.912  max grad norm 2.13  lr 0.0081
+epoch  6  loss 0.170  val 0.911  max grad norm 1.86  lr 0.0061
+epoch  7  loss 0.133  val 0.916  max grad norm 2.15  lr 0.0039
+epoch  8  loss 0.093  val 0.925  max grad norm 1.83  lr 0.0019
+epoch  9  loss 0.056  val 0.928  max grad norm 2.29  lr 0.00049
+epoch 10  loss 0.038  val 0.927  max grad norm 1.84  lr 4.1e-08
+CNN        test 0.913
+CNN+tricks test 0.923

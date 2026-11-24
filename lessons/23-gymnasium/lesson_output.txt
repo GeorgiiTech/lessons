@@ -1,0 +1,13 @@
+observation space: (4,) float32  action space: Discrete(2)
+first observation: [ 0.014 -0.023 -0.046 -0.048]
+after one step: [ 0.013  0.173 -0.047 -0.355]  reward 1.0
+terminated False  truncated False
+10,000 steps, 4.1 microseconds per step
+random     mean   24.1  best    73
+lean rule  mean  500.0  best   500
+random     ended after  13 steps: terminated=True  truncated=False
+lean rule  ended after 500 steps: terminated=False  truncated=True
+try   1: mean   53.8  (new best)
+try   2: mean  136.3  (new best)
+try  38: mean  252.1  (new best)
+random search: best mean 252.1 found at try 38

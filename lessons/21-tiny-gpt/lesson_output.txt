@@ -1,0 +1,35 @@
+1,115,394 characters, vocabulary 65
+encode('Hello'): [20, 43, 50, 50, 53]
+parameters: 826,433
+x (64, 128) -> logits (64, 128, 65)
+first loss 4.286  ln(vocab) 4.174
+step   600  train 1.765  val 1.888     82 s
+step  1200  train 1.458  val 1.682    271 s
+step  1800  train 1.361  val 1.612    384 s
+step  2400  train 1.359  val 1.578    437 s
+step  3000  train 1.245  val 1.555    531 s
+--- temperature 0.5
+ROMEO:
+No, my lord, be my treason in any man's life,
+And then the place of the sense, and not call'd
+The bowels of the peopleful perfection.
+
+ANGELO:
+Well, what hast t
+--- temperature 1.0
+ROMEO:
+Convurnish!
+
+JULIET:
+estation and press'd him to stand upon myself,
+Your revenues highling pradveD on me,
+One to thinefit lazy ories: live indeed, for law,
+This
+--- temperature 1.5
+ROMEO:
+ConguencY! commanded,est thy man!---I'll in,
+Noth they from myself, YorksLICHMIAMI:
+Welcove your Daotin?
+Icame
+With nyfe--leak orse;
+And whiles siufterly? sleep

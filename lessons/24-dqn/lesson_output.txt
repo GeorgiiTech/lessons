@@ -1,0 +1,14 @@
+Q(s) for one state: (1, 2)  parameters: 17410
+step   7500  epsilon 0.25  greedy score  137.8
+step  15000  epsilon 0.05  greedy score  368.9
+step  22500  epsilon 0.05  greedy score  266.2
+step  30000  epsilon 0.05  greedy score  146.1
+step  37500  epsilon 0.05  greedy score  140.0
+step  45000  epsilon 0.05  greedy score   78.0
+step  52500  epsilon 0.05  greedy score   64.0
+step  60000  epsilon 0.05  greedy score  101.0
+DQN: 28 s, best greedy score 368.9, last 101.0
+best weights, 100 new episodes: 360.0
+Q(start) = [13.5, 13.4]  (most a +1 per step reward can sum to: 100)
+no target network      best    9.0  last    9.0
+no replay (buffer 128) best  366.9  last  177.3

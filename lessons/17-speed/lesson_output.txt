@@ -1,0 +1,17 @@
+device: mps
+cpu      158.3 ms/step
+mps       24.7 ms/step   x6.4
+10 matmuls: 24.4 ms queued, 276.2 ms finished
+float32 : [1.000100016593933, 65504.0, 70000.0, 9.99999993922529e-09]
+float16 : [1.0, 65504.0, inf, 0.0]
+bfloat16: [1.0, 65536.0, 70144.0, 1.0011717677116394e-08]
+mps + autocast fp16    25.5 ms/step   x0.97
+batch   32:    3.3 ms/step      9843 pictures/s
+batch  128:   12.4 ms/step     10302 pictures/s
+batch  512:   50.0 ms/step     10243 pictures/s
+compiled    29.3 ms/step   x0.84   (first call incl. compile: 2.9 s)
+aten::copy_                     32.0 %  x28
+aten::native_batch_norm         12.6 %  x12
+aten::native_batch_norm_backwa  10.3 %  x12
+aten::mps_convolution_backward   6.9 %  x12
+aten::_mps_convolution           5.4 %  x12

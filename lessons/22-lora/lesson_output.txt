@@ -1,0 +1,22 @@
+parameters: 81,912,576  vocabulary: 50,257
+tok('Hello'): [15496]  tok('ROMEO:'): [33676, 4720, 25]
+train tokens 301,966  (3.32 characters per token)
+before: 1.462 per character
+ROMEO: This is a bit of a stretch to say that the only thing that would make this game work is the development. I don't understand why players would care what they're doing. I would rather wait until I have a chance to spend time with them to get a feel for the game as well.
+trainable 147,456 of 82,060,032  (0.18%)
+lora_A (8, 768)  lora_B (2304, 8)  B starts at zero: True
+step  120  loss 4.740    13 s
+step  240  loss 4.368    25 s
+step  360  loss 4.226    38 s
+step  480  loss 4.242    50 s
+step  600  loss 4.267    63 s
+after:  1.278 per character  (lesson 21 from scratch: 1.555)
+ROMEO:
+I have seen him.
+
+GALIUS:
+A man of my father's memory!
+
+GLOBALIANUS: (My father's remembrance: a man is dead; a man has died;
+I will never kill him. I will not kill him,
+adapter on disk: 0.60 MB  (full model: 328 MB in float32)
